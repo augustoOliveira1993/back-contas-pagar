@@ -5,10 +5,8 @@ import FileUpload from '@shared/utils/FileUpload';
 import '@modules/log/container';
 import '@modules/users/container';
 import '@modules/notification/container';
-import '@modules/colaborador/container';
 import '@modules/parametro/container';
-import '@modules/cargo/container';
-import '@modules/evento/container';
+import '@modules/conta/container';
 
 container.registerSingleton<FileUpload>('FileUpload', FileUpload);
 

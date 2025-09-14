@@ -7,10 +7,8 @@ import permissaoRoutes from '@modules/users/infra/https/routes/permissaoRouter';
 import permissaoGrupoRoutes from '@modules/users/infra/https/routes/permissaoGrupoRouter';
 import authRoles from '@modules/users/infra/https/routes/authRouter';
 import notificationRouter from '@modules/notification/infra/https/routes/notificationRouter';
-import colaboradorRouter from '@modules/colaborador/infra/https/routes/colaboradorRouter';
 import parametroRouter from '@modules/parametro/infra/https/routes/parametroRouter';
-import cargoRouter from '@modules/cargo/infra/https/routes/cargoRouter';
-import eventoRouter from '@modules/evento/infra/https/routes/eventoRouter';
+import contaRouter from '@modules/conta/infra/https/routes/contaRouter';
 
 const routes = Router();
 
@@ -24,11 +22,8 @@ routes.use('/permissao-grupos', permissaoGrupoRoutes);
 
 routes.use('/logs', logRoutes);
 routes.use('/notifications', notificationRouter);
-routes.use('/colaboradores', colaboradorRouter);
 routes.use('/parametros', parametroRouter);
 
-routes.use('/cargos', cargoRouter);
-
-routes.use('/eventos', eventoRouter);
+routes.use('/contas', contaRouter);
 
 export default routes;
